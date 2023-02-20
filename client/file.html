@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HPP</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="file.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="app.js"></script>
+    </head>
+    <body>
+      <div class="container">
+  <form>
+    <h2>USA Housing Price Prediction Web App</h2>
+    <select class="location" id="uiLocations">
+        <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+    </select>
+    <input type="number" id="uiSqtf" placeholder="Sqft">
+    <input type="number" id="uiBedrooms" placeholder="No. of Bedrooms">
+    <input type="number" id="uiBathrooms" placeholder="No. of Bathrooms">
+    <div>
+        <button class="submit" onclick="onClickedEstimatePrice()" type="button">Predict Price</button>
+        <br><div id="uiEstimatedPrice" class="result"></div>
+    </div>
+    
+  </form>
+</div>
+</body>
+</html>
