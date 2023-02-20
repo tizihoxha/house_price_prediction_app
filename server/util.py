@@ -13,11 +13,11 @@ def load_saved_data():
     global __data_columns
     global __locations
     
-    with open("C:\\Users\\CRS\\Desktop\\Jupyter Test\\server\\artifacts\\columns.json", "r") as f:
+    with open("C:\\Users\\User\\Desktop\\house_price_prediction_app\\server\\artifacts\\columns.json", "r") as f:
         __data_columns = json.load(f)["data_columns"]
         __locations = __data_columns[3:]
     
-    with open("C:\\Users\\CRS\\Desktop\\Jupyter Test\\server\\artifacts\\house_price_prediction.pickle", "rb") as f:
+    with open("C:\\Users\\User\\Desktop\\house_price_prediction_app\\server\\artifacts\\house_price_prediction.pickle", "rb") as f:
         __model = pickle.load(f)
     print("Losding data has finished!")
     
